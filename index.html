@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Masonry gallery</title>
+</head>
+<body>
+    <h1 class="display-1 text-black-80 w-100 position-absolute d-flex justify-content-center p-5">Masonry gallery</h1>
+    <div id="masonry" class="w-100" alt="Masonry"></div>
+
+    <button id="btn_image" class="btn d-flex mx-auto my-5 btn-outline-primary">Add imagen</button>
+    <div id="add_image" class="w-75 mx-auto d-none">
+        <input  class="form-control my-2" type="text" placeholder="Link to image">
+        <input class="form-control my-2" type="text" placeholder="Link to another page">
+        <select  class="form-control my-2"  name="select">
+            <option value="value1">Bricks</option>
+            <option value="value2">Trowel</option>
+            <option value="value3">Helmets</option>
+            <option value="value3">Shovel</option>
+          </select>
+          <input type="text" class="form-control my-2" placeholder="Username">
+          <input class="btn btn-outline-danger my-2" type="file" id="file" hidden>
+          <button class=" btn btn-outline-danger" onclick="$('#file')[0].click()">Upload imagen</button>
+    </div>
+
+    <div id="gallery" class="row m-auto my-5" style="width: 500px;">
+        <div class="col-3"><button class="buttonGalery w-100 btn btn-outline-warning" data-click="Bricks">Bricks</button></div>
+        <div class="col-3"><button class="buttonGalery w-100 btn btn-outline-warning" data-click="Trowel">Trowel</button></div>
+        <div class="col-3"><button class="buttonGalery w-100 btn btn-outline-warning" data-click="Helmets">Helmets</button></div>
+        <div class="col-3"><button class="buttonGalery w-100 btn btn-outline-warning" data-click="Shovel">Shovel</button></div>
+    </div>
+
+    <div class="container mb-5">
+
+        <div class="images row mx-auto">
+            <div class="col-4 text-center my-3"><span class="d-none">x</span><a  href="#"><img src="./gallery/Helmets/1.jpg"></a></div>
+            <div class="col-4 text-center my-3"><span class="d-none">x</span><a href="#"><img src="./gallery/Trowel/1.jpg"></a></div>
+            <div class="col-4 text-center my-3"><span class="d-none">x</span><a href="#"><img src="./gallery/Bricks/1.jpg"></a></div>
+            <div class="col-4 text-center my-3"><span class="d-none">x</span><a href="#"><img src="./gallery/Shovel/2.jpg"></a></div>
+            <div class="col-4 text-center my-3"><span class="d-none">x</span><a href="#"><img src="./gallery/Shovel/1.jpg"></a></div>
+            <div class="col-4 text-center my-3"><span class="d-none">x</span><a href="#"><img src="./gallery/Bricks/2.jpg"></a></div>
+            <div class="col-4 text-center my-3"><span class="d-none">x</span><a href="#"><img src="./gallery/Trowel/3.jpg"></a></div>
+            <div class="col-4 text-center my-3"><span class="d-none">x</span><a href="#"><img src="./gallery/Helmets/7.jpg"></a></div>
+            <div class="col-4 text-center my-3"><span class="d-none">x</span><a href="#"><img src="./gallery/Shovel/7.jpg"></a></div>
+        </div>
+
+    </div>
+
+<script src="./js/myCode.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+*{
+    user-select: none;
+}
+
+h1{
+    color:  #ffc845;
+    z-index: 100;
+    animation: slider 2s;
+}
+
+#masonry{
+    height: 230px;
+    background-image:     linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ), url('../brickmasonry.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+}
+
+.images{
+    width: 90%;
+}
+
+.images div{
+    height: 200px;
+    overflow: hidden;
+    animation: fide 2s;
+    position: relative;
+}
+
+.images div img{
+    width: 70%;
+    height: 100%;
+    cursor: pointer;
+    margin: auto;
+    transition: .5s;
+}
+
+.images div img:hover{
+    width: 90%;
+    height: 120%;
+}
+
+.buttonGalery:hover{
+    color: black !important;
+}
+
+span{
+    cursor: pointer;
+    position: absolute;
+    color: #dc3545;
+    right: 5%;
+    top: 1%;
+    font-size: 2vmax;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #dc35463d;
+    border: 1px solid #dc3545;
+}
+
+@keyframes slider{
+
+    0% {
+        opacity: 0%;
+        margin-top: -5%;
+    }    
+}
+
+@keyframes fide{
+
+    0% {
+        opacity: 0%;
+    }
+}

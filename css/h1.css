@@ -1,0 +1,16 @@
+h1{
+    z-index: 100;
+    animation: fideIn .5s;
+    margin: 5% auto;
+}
+
+img{
+    animation: fideIn .5s;
+}
+
+@keyframes fideIn{
+
+    0% {
+        opacity: 0%;
+    }    
+}
